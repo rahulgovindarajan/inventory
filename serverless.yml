@@ -1,4 +1,4 @@
-service: lystloc-admin-panel-api-v1
+service: inventory-code
 provider:
   name: aws
   region: ap-south-1
