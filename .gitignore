@@ -1,0 +1,15 @@
+# package directories
+node_modules
+jspm_packages
+
+# Serverless directories
+.serverless
+
+# Environment Variables
+variables.env
+
+.vscode
+prod-secrets.json
+.idea/dataSources/f4089e62-1041-46fe-9384-6566985883da.xml
+.idea/workspace.xml
+package-lock.json

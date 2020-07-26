@@ -1,0 +1,19 @@
+{
+  "name": "building-a-serverless-api-with-nodejs-and-aws-aurora-serverless",
+  "version": "1.0.0",
+  "description": "",
+  "main": "controller/leads.js",
+  "scripts": {
+    "offline": "sls offline start --skipCacheInvalidation"
+  },
+  "keywords": [],
+  "author": "Adnan Rahić",
+  "license": "MIT",
+  "devDependencies": {
+    "serverless-offline": "^3.31.3"
+  },
+  "dependencies": {
+    "async": "^2.6.2",
+    "serverless": "^1.72.0"
+  }
+}

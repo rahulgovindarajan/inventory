@@ -1,0 +1,27 @@
+service: lystloc-admin-panel-api-v1
+provider:
+  name: aws
+  region: ap-south-1
+  runtime: nodejs10.x
+  timeout: 30
+functions:
+  inventory:
+    handler: controller/user.inventory
+    events:
+      - http:
+          path: inventory
+          method: post
+          cors: true          
+
+#  notification_list:
+#    handler: controller/user.notification_list
+#    layers:
+#      - ${self:custom.secrets.LAMBDA_LAYER_ARN}
+#      - ${self:custom.secrets.LAMBDA_LAYER_ARN_2}
+#    events:
+#      - http:
+#          path: notifications
+#          method: post
+#          cors: true
+plugins:
+  - serverless-offline
